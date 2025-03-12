@@ -17,9 +17,22 @@ body.dark-mode {
 
 /* Navigation Bar */
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #1a1a1a;
-    padding: 10px 0;
+    padding: 15px 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    height: 50px; /* Adjust logo size */
+    margin-right: 10px;
 }
 
 header h1 {
@@ -31,11 +44,12 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
 }
 
 nav ul li a, #mode-toggle {
@@ -54,9 +68,13 @@ nav ul li a:hover, #mode-toggle:hover {
 
 /* Hero Section */
 #home {
-    padding: 50px 20px;
+    padding: 80px 20px;
     background: url('background.jpg') no-repeat center center/cover;
-    height: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Button Animation */
@@ -127,7 +145,8 @@ nav ul li a:hover, #mode-toggle:hover {
 
 /* Footer */
 footer {
-    padding: 10px;
+    padding: 15px;
     background: #1a1a1a;
     color: white;
+    font-size: 14px;
 }
