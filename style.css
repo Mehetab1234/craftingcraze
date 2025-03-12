@@ -1,11 +1,18 @@
-/* Reset & General Styles */
+/* Light Mode (Default) */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
     background: #0a0a0a;
     color: white;
-    text-align: center;
 }
 
 /* Navigation Bar */
@@ -17,6 +24,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 24px;
+    color: white;
 }
 
 nav ul {
@@ -29,10 +37,17 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+nav ul li a, #mode-toggle {
     color: #ff3b3b;
     text-decoration: none;
     font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#mode-toggle {
+    font-size: 16px;
 }
 
 /* Hero Section */
@@ -42,6 +57,7 @@ nav ul li a {
     height: 300px;
 }
 
+/* Button */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -53,35 +69,9 @@ nav ul li a {
     border-radius: 5px;
 }
 
-/* Game Showcase */
-#games {
-    padding: 50px 20px;
-}
-
-.game-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.game {
-    background: #222;
-    padding: 10px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.game img {
-    width: 200px;
-    border-radius: 5px;
-}
-
-.game:hover {
-    transform: scale(1.1);
-}
-
 /* Footer */
 footer {
     padding: 10px;
     background: #1a1a1a;
+    color: white;
 }
