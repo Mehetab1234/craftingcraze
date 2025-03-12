@@ -1,0 +1,87 @@
+/* Reset & General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Bar */
+header {
+    background: #1a1a1a;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff3b3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#home {
+    padding: 50px 20px;
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 300px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #ff3b3b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Game Showcase */
+#games {
+    padding: 50px 20px;
+}
+
+.game-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game {
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.game img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.game:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    background: #1a1a1a;
+}
