@@ -31,7 +31,7 @@ header {
 }
 
 .site-logo {
-    height: 50px; /* Adjust logo size */
+    height: 60px;
     margin-right: 10px;
 }
 
@@ -68,7 +68,7 @@ nav ul li a:hover, #mode-toggle:hover {
 
 /* Hero Section */
 #home {
-    padding: 80px 20px;
+    padding: 100px 20px;
     background: url('background.jpg') no-repeat center center/cover;
     height: 500px;
     display: flex;
@@ -107,14 +107,14 @@ nav ul li a:hover, #mode-toggle:hover {
 
 /* Floating Icons */
 .floating-icons img {
-    width: 50px;
+    width: 80px;
     position: absolute;
     animation: float 5s infinite alternate ease-in-out;
 }
 
-.floating-icons img:nth-child(1) { top: 10%; left: 10%; animation-duration: 4s; }
-.floating-icons img:nth-child(2) { top: 30%; right: 10%; animation-duration: 6s; }
-.floating-icons img:nth-child(3) { bottom: 20%; left: 40%; animation-duration: 5s; }
+.icon1 { top: 20%; left: 10%; animation-duration: 4s; }
+.icon2 { top: 40%; right: 10%; animation-duration: 6s; }
+.icon3 { bottom: 15%; left: 50%; transform: translateX(-50%); animation-duration: 5s; }
 
 @keyframes float {
     0% { transform: translateY(0px); }
